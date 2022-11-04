@@ -29,12 +29,12 @@ then
 	res2=`$1"push_swap" $test2`
 	if [ "$res1" = "" -a "$res2" = "" ]
 	then
-		printf -- "------ Test PASSED ------\n\n"
+		printf -- "${Green}Test PASSED\n\n${White}"
 		exit 1
 	else
 		if [ "$res1" != "" ]; then printf -- "${Red} list = $test1\n"; fi
 		if [ "$res2" != "" ]; then printf -- "${Red} list = $test2\n"; fi
-		printf -- "------ Test FAILED ------\n\n"
+		printf -- "${Red}Test FAILED\n\n${White}"
 		exit 0
 	fi
 fi
@@ -75,9 +75,9 @@ then
 	fi
 	if [ $nb_success -eq "1" ]
 		then
-			printf -- "------ Test PASSED ------\n\n"
+			printf -- "${Green}Test PASSED\n\n${White}"
 		else
-			printf -- "------ Test FAILED ------\n\n"
+			printf -- "${Red}Test FAILED\n\n${White}"
 	fi
 	exit $nb_success
 fi

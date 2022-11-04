@@ -7,9 +7,9 @@ PUSHSWAP_DIRECTORY="../"
 CHECKER="./checker_linux" 
 
 #all test defaults values
-NB_TEST_5=20
-NB_TEST_100=20
-NB_TEST_500=20
+NB_TEST_5=10
+NB_TEST_100=15
+NB_TEST_500=15
 
 make -C $PUSHSWAP_DIRECTORY > /dev/null
 
